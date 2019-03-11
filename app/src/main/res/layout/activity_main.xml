@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="42dp">
+
+        <EditText
+            android:id="@+id/edit_text_first"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:freezesText="true"
+            android:hint="@string/first"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/edit_text_second"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:freezesText="true"
+            android:hint="@string/second"
+            android:inputType="number" />
+
+        <CheckBox
+            android:id="@+id/wings_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="@string/has_wings"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/diet_button_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/diet"
+                android:textSize="18dp"/>
+
+            <RadioButton
+                android:id="@+id/meat_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/meat" />
+
+            <RadioButton
+                android:id="@+id/plants_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/plants" />
+
+            <RadioButton
+                android:id="@+id/both_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/both" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:text="@string/submit"
+            android:layout_gravity="center_horizontal"/>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
